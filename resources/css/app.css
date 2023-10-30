@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-nav {
+    @apply block;
+}
+
+.active-header {
+    @apply shadow-md backdrop-blur-md;
+}
+
+.notification-tab > .active {
+    @apply text-blue-500 border-b-blue-500 hover:text-blue-500;
+}
+.order-tab > .active {
+    @apply bg-blue-500 text-white hover:text-white;
+}
+.main.active {
+    @apply md:w-full md:ml-0;
+}
+.sideBar-hidden {
+    @apply hidden;
+}
