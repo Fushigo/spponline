@@ -11,7 +11,7 @@ class PembayaranSiswaController extends Controller
 {
     public function index()
     {
-        $dataPembayaran = Pembayaran::where('id_siswa', Auth::guard('siswa')->user()->id_siswa)->get();
+        $dataPembayaran = Pembayaran::where('id_siswa', Auth::guard('siswa')->user()->id_siswa)->where('status', 'Unpaid')->get();
         return view('dashboard.siswa.pembayaran.index', compact('dataPembayaran'));
     }
 

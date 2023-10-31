@@ -44,15 +44,11 @@
                     <div class="flex flex-col gap-4">
                         <div class="text-sm font-medium text-gray-400">Jumlah Tagihan</div>
                         <div class="text-2xl font-semibold mb-1">
-                            @foreach ($dataPembayaran as $pembayaran)
-                                {{ $pembayaran->count() }}
-                            @endforeach
+                            {{ $dataPembayaran->count() }}
                         </div>
                         <div class="text-sm font-medium text-gray-400">Tagihan Terbayar</div>
                         <div class="text-2xl font-semibold mb-1">
-                            @foreach ($dataHistory as $history)
-                                {{ $history->count() }}
-                            @endforeach
+                            {{ $dataHistory->count() }}
                         </div>
                     </div>
                 </div>

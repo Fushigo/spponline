@@ -59,7 +59,6 @@
                 embedId: 'snap-container',
                 onSuccess: function(result) {
                     /* You may add your own implementation here */
-                    alert("payment success!");
                     window.location.href = '/siswa/updatePembayaran/{{ $data->id_pembayaran }}';
                     console.log(result);
                 },
